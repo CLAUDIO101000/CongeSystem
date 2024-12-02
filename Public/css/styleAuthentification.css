@@ -1,0 +1,133 @@
+/* styleAuthentification.css */
+
+/* Variables CSS */
+:root {
+    --primary-color: #4CAF50;
+    --primary-hover-color: #45a049;
+    --danger-bg-color: #f2dede;
+    --danger-text-color: #a94442;
+    --danger-border-color: #ebccd1;
+    --form-border-color: #ddd;
+    --form-focus-border-color: #4CAF50;
+    --form-focus-shadow-color: rgba(76, 175, 80, 0.5);
+    --text-color: #555;
+    --bg-color: #f5f5f5;
+    --card-bg-color: #fafafa;
+    --box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset des styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+.card-header {
+    position: relative;
+    width: 110%;
+    left: -5%;
+    top: 15%;
+    padding: 15px 0px;
+    text-align: center;
+    color: white;
+    background-color: #8e2de2;
+    background:linear-gradient(to right,#4a00e0,#8e2de2);
+}
+.card-header:before {
+   position: absolute;
+    content: "";
+    left: 0;
+    bottom: -20px;
+    width: 18px;
+    height: 20px;
+    background-color: #5f2bc2;
+    clip-path: polygon(0 0,100% 0,100% 100%);
+}
+.card-header::after {
+    position: absolute;
+     content: "";
+     right: 0;
+     bottom: -20px;
+     width: 18px;
+     height: 20px;
+     background-color: #5f2bc2;
+     clip-path: polygon(0 0,0 100%,100% 0);
+ }
+
+.card-body {
+    padding: 20px;
+}
+
+/* Form Labels */
+.form-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+/* Form Controls */
+.form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid var(--form-border-color);
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--form-focus-border-color);
+    box-shadow: 0 0 5px var(--form-focus-shadow-color);
+}
+
+.checkbox {
+    margin-bottom: 15px;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #5f2bc2;
+    color: #fafafa;
+    border: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+}
+
+.btn-primary:hover {
+   font-size: 1.1rem;
+}
+
+/* Alerts */
+.alert-danger {
+    background-color: var(--danger-bg-color);
+    color: var(--danger-text-color);
+    border: 1px solid var(--danger-border-color);
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}

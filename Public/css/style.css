@@ -1,0 +1,233 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease 500ms;
+}
+
+/* Variables CSS */
+:root {
+    --main-bg-color: #222;
+    --secondary-bg-color: #555;
+    --highlight-color: #4CAF50;
+    --text-color: #fafafa;
+    --icon-color: #3366ff;
+}
+
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    line-height: 1.6;
+}
+
+/* Sidebar Style */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: var(--main-bg-color);
+    transition: width 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.logo-details {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.logo-details .bi {
+    font-size: 2.5rem;
+    margin-right: 15px;
+}
+
+.logo-details .logo_name {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    padding: 10px 0;
+}
+
+.nav-links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    background-color: var(--secondary-bg-color);
+}
+
+.nav-links a.active {
+    border-right: 5px solid var(--highlight-color);
+}
+
+.nav-links a .bi {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+/* Main Content Style */
+.home-section {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.sidebar-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--main-bg-color);
+    transition: all 0.3s ease;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/* Footer Style */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Conteneur principal des boîtes d'aperçu */
+.overview-boxes {
+    display: flex;
+    justify-content: space-around;   
+}
+
+/* Style général des boîtes d'aperçu */
+.box {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.box i {
+    font-size: 3rem;
+    color: var(--icon-color);
+}
+
+/* Style des chiffres */
+.number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Style du texte de description */
+.box-txt {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #555555;
+}
+
+/* Style du contenu principal du tableau de bord */
+.home-content {
+    padding: 20px;
+}
+
+/* imprimer */
+.d-mod{
+    display: flex;
+    margin-left: 210px;
+    margin-top: -75px;
+}
+
+/* Style de la graphe */
+.chart-container {
+    width: 85%;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+}
+
+/* Style Tableau */
+.table-custom td,
+.table-custom th {
+  padding: 0.25rem;
+}
+
+.table-custom {
+  font-size: 0.775rem;
+}
+
+/* Formulaire Style */
+.form-group {
+    max-width: 230px;
+    margin: auto;
+}
+
+.form-control, .form-select {
+    height: 35px;
+}
+
+/* Connexion session */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blink {
+    color: green;
+    font-size: 12px;
+    animation: blink 2s infinite;
+}
+
+/* Message de confirmation et d'erreur */
+.custom-swal-popup {
+    width: 250px;
+    max-width: 90%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.custom-button {
+    width: 80px;
+    padding: 7px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.custom-icon {
+    font-size: 10px;
+}
+
+.swal2-title {
+    font-size: 16px;
+}
+
+.swal2-text {
+    font-size: 14px;
+}
