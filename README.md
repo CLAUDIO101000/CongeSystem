@@ -25,3 +25,8 @@ Pour exécuter ce projet, vous devez disposer des éléments suivants :
 Assurez-vous d'installer les extensions suivantes :  
 - **PHP Server** : Pour exécuter des projets PHP localement.  
 - **PHP Intelephense** : Pour la complétion de code, l'analyse statique, et une meilleure productivité avec PHP.
+
+## Auteur
+- **Nom de l'auteur** : RANAIVOSON Nantenaina Claudio
+- **e-mail** : ranaivosonclaudio@gmail.com
+- **tel** : 032 43 372 46
