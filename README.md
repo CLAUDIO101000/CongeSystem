@@ -15,7 +15,13 @@ L'objectif est de faciliter la gestion administrative des congés en automatisan
 
 ## Prérequis
 Pour exécuter ce projet, vous devez disposer des éléments suivants :  
-- **Serveur web** : Apache.  
+- **Serveur web** : WAMP, XAMPP ou tout autre serveur compatible avec PHP et MySQL.  
 - **PHP** : Version 7.4 ou supérieure.  
 - **Base de données** : MySQL version 5.7 ou supérieure.  
 - **Navigateur compatible** : Chrome, Firefox, Edge, etc.  
+- **Fichier SQL** : Importez le fichier `gestion_conges.sql` dans votre base de données MySQL pour configurer les tables nécessaires.  
+
+### Si vous utilisez Visual Studio Code :  
+Assurez-vous d'installer les extensions suivantes :  
+- **PHP Server** : Pour exécuter des projets PHP localement.  
+- **PHP Intelephense** : Pour la complétion de code, l'analyse statique, et une meilleure productivité avec PHP.
