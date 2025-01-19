@@ -10,7 +10,7 @@ class Connexion {
             $nom_serveur = "localhost";
             $nom_base_de_donne = "gestion_conges";
             $utilisateur = "root";
-            $motpass = "for80ner06";
+            $motpass = "";
 
             try {
                 self::$db = new PDO("mysql:host=$nom_serveur;dbname=$nom_base_de_donne", $utilisateur, $motpass);
